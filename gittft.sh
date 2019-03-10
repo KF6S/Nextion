@@ -12,9 +12,7 @@
 model=$(python getmodel.py;)
 echo $model
 tft='.tft' gz='.gz'
-#clone the NextionTFT distribution from Github to /TMP/NextionTFT
-#git clone https://github.com/KF6S/NextionTFT
-#Check to make sure that no TFT file exists at the destination
+#Check to make sure that NO TFT file exists at the destination
 rm /usr/local/etc/$model$tft
 cp /tmp/NextionTFT/$model$tft /usr/local/etc/$model$tft > msg
 echo "Ready to flash screen..."
